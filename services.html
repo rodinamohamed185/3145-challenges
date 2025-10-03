@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+<style>
+    
+    body{
+        background-color: #d17bd1;
+    }
+    .service-card {
+      background: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    span{
+        font-size: 30px;
+        color: purple;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(146, 44, 146, 0.2);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+
+      &:hover {
+        background-color: #d17bd1;
+        color: antiquewhite;
+      }
+    }
+
+    .service-card img {
+      width: 100%;
+      border-radius: 12px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+</style>
+
+
+    <section class="services">
+    <span>Our Services</span>
+    <div class="service-card">
+      <img src="imgs/bouquets.jpg" alt="Bouquet">
+      <h2>Bouquets</h2>
+      <p>Custom-made flower bouquets designed for your special occasions.</p>
+    </div>
+    <div class="service-card">
+      <img src="imgs/decor.jpg" alt="Decoration">
+      <h2>Decorations</h2>
+      <p>Elegant flower decorations for weddings, events, and parties.</p>
+    </div>
+    <div class="service-card">
+      <img src="imgs/dilevery.jpg" alt="Delivery">
+      <h2>Delivery</h2>
+      <p>Fast and fresh flower delivery right to your doorstep.</p>
+    </div>
+  </section>
+</body>
+</html>
