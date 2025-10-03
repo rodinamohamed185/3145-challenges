@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #a64ca6;
+        }
+        .contact {
+      padding: 30px;
+      text-align: center;
+
+      div {
+        margin: 20px;
+      }
+    }
+    span{
+        font-size: 30px;
+    }
+
+    input,
+    textarea {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #8b066a;
+      border-radius: 5px;
+
+      &:focus {
+        box-shadow: 0 0 5px #8b066a;
+        border-color: #8b066a;
+        outline: none;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #1a0b1a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #8b066a;
+      }
+    }
+
+    .contact-info {
+      h3 {
+        color: #360229;
+      }
+    }
+    </style>
+
+
+
+
+
+    <section class="contact">
+    <span>Contact Us</span>
+    <div class="row g-3">
+      <div class="col">
+        <input class="form-control form-control-lg" type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="col">
+        <input class="form-control" type="email" name="email" placeholder="Your Email">
+      </div>
+      <div class="col">
+        <input class="form-control" type="text" name="subject" placeholder="Subject">
+      </div>
+      <div class="col">
+        <textarea class="form-control" name="message" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <div class="col">
+        <button type="button">Send Message</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="contact-info">
+      <h3>"Other Ways to Reach Us"</h3>
+      <p>📍 Address: 123 ElHorya Street, Alexandria, Egypt</p>
+      <p>📞 Phone: +20 111 222 3333</p>
+      <p>⏰ Opening Hours: Mon - Sat, 9:00 AM - 8:00 PM</p>
+    </div>
+  </section>
+
+</body>
+</html>
